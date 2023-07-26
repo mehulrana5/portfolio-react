@@ -1,0 +1,113 @@
+@import url(./root.css);
+
+
+.show-case{
+    height: 100vh;
+    display: flex;
+    /* border:  red solid; */
+    flex-direction: column;
+    padding: 4em;
+}
+.card-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.card{
+    /* border: green solid; */
+    display: flex;
+    flex-direction: column;
+    background-color: #000000ca;
+    height: 100%;
+    width: 35%;
+    min-width: 280px;
+    padding: 10px;
+    font-size: 18px;
+    margin: 5px;
+}
+.proj-img{
+    /* border: blue solid; */
+    height: 40%;
+    /* padding:10px; */
+}
+.proj-img-container{
+    /* border-radius: 20px; */
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity: 80%; */
+}
+.p1{
+    background-image: url(../img/proj1-img1.png);
+}
+.proj-title{
+    /* border: yellow solid; */
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.proj-tags{
+    /* border: pink solid; */
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.tag{
+    /* border: 1px red solid; */
+    margin-right: 5px;
+    font-size:12px;
+    padding:5px 10px 5px 10px;
+    background-color: white;
+    color:#0085d3;
+    font-weight: 500;
+}
+.proj-descp{
+    /* border: orange solid; */
+    height: 30%;
+    overflow:hidden;
+    font-size: small;
+}
+.card-btn{
+    /* border-radius: 20px; */
+    margin: auto;
+    color: #0085d3;
+    font-weight: 800;
+    background-color: white;
+    padding:10px;
+    cursor: pointer;
+    border: none;
+}
+.show-case-footer{
+    margin:5px auto;
+
+}
+.show-case-footer>a{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:700px){
+    .card{
+        height: 90%;
+        padding: 1em;
+        margin-top: 50px;
+    }   
+    .show-case{
+        padding: 0;
+    }
+    .card-container{
+        padding: 0em;
+        height: 80%;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .show-case-footer{
+        font-size: 15px;
+    }
+}

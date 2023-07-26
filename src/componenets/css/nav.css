@@ -1,0 +1,86 @@
+@import url(./root.css);
+.nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* width: 100%; */
+    height: 80px;
+    z-index: 100;
+}
+
+.nav ul{
+    list-style: none;
+    /* background-color: rgba(245, 245, 245, 0); */
+    display: flex;
+    /* border: red solid; */
+    font-size:1.2em;
+    height: 100%;
+    padding: 15px;
+    font-weight: 600;
+    justify-content: flex-end;
+    align-items: center;
+    transition:.4s ease-in-out;
+}
+
+.nav ul li{
+    margin-left:10px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav ul li:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.nav-active{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.burger{
+    width: 50px;
+    height: 50px;
+    /* border: red solid; */
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.lines{
+    border: 2px white solid;
+    border-radius: 20px;
+    margin: 4px;
+    background-color: white;
+    transition: .4s;
+}
+.nav ul.open{
+    left:0;
+}
+
+.burger .open.l1{
+    transform: rotate(45deg) translate(9px,9px);
+}
+.burger .open.l2{
+    opacity: 0;
+}
+
+.burger .open.l3{
+    transform: rotate(-45deg) translate(8px,-9px);
+}
+@media screen and (max-width:700px){
+    .burger{
+        display: flex;
+    }
+    .nav ul{
+        position: fixed;
+        font-size: 1em;
+        justify-content: start;
+        height:fit-content;
+        padding-left: 0;
+        top:0;
+        left: -100%;
+    }
+}

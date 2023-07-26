@@ -1,0 +1,81 @@
+@import url(./root.css);
+
+.about-sec{
+    height: 100vh;
+}
+.intro{
+    display: flex;
+    height: 100vh;
+    padding: 5em;
+}
+.btn{
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: large;
+    transition: .3s ease-in-out;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.active{
+    background-color: white;
+    color: black;
+}
+.ani-1{
+    width: 400px;
+    height: 100%;
+}
+.about-container{
+    position: relative;
+    display: none;
+    height: 90%;
+    overflow: auto;
+}
+.open{
+    display: block;
+}
+
+.wrap-container{
+    width: 70%;
+    height: 100%;
+    /* border: pink solid; */
+}
+
+
+.resume-img-mask{
+    height:100%;
+    width: 100%;
+    background-image: url(../img/resume-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.resume-img-mask:hover{
+    opacity: 10%;
+}
+
+@media screen and (max-width:700px){
+    .ani-1{
+        width: 300px;
+        height:50%;
+    }
+    .about-me{
+        margin-top:0%;
+        width: 100%;
+    }
+    .intro{
+        flex-wrap: wrap;
+        padding: 1em;
+        justify-content: center;
+        height: 95vh;
+    }
+    .wrap-container{
+        width: 100%;
+    }
+}

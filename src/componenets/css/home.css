@@ -1,0 +1,45 @@
+@import url(./root.css);
+
+.home-page{
+    height: 100vh;
+    /* border: yellow solid; */
+}
+
+.home-page .img1{
+    /* border: red solid; */
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/home-img2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10%;
+    left:5%;
+}
+.home-container{
+    /* border: green solid; */
+    height: fit-content;
+    width: 60%;
+    position: relative;
+    top:-11%;
+    left: 30%;
+    margin-left: 5px;
+    font-size: large;
+
+}
+.my-name{
+    font-weight: 600;
+}
+
+@media screen and (max-width:700px) {
+    .home-page .img1{
+        left: 0;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+    }
+    .home-container{
+        top: 10%;
+        left: 0;
+    }
+}
