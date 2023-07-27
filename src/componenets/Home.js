@@ -7,9 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   useEffect(() => {
-    var isTabletScreen = window.innerWidth > 700;
+    // var isTabletScreen = window.innerWidth > 700;
     // Conditionally create the scroll trigger
-    if (isTabletScreen) {
+    if (1) {
       gsap.to('.background', {
         y: '-8%', // Adjust this value to control the parallax effect
         ease: 'none',
@@ -25,8 +25,7 @@ export default function Home() {
   return ( 
     <>
       <div className="home-page">
-        <div className="img1">
-        </div>
+        <div className="img1"></div>
         <div className="home-container">
           Hi, i am <span className="my-name">Mehul.</span> 
           <br />

@@ -2,44 +2,43 @@
 
 .home-page{
     height: 100vh;
+    width: 100%;
+    padding: 1em;
     /* border: yellow solid; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.home-page .img1{
+.img1{
     /* border: red solid; */
-    width: 300px;
-    height: 300px;
+    width: 30%;
+    height: 100%;
     background-image: url(../img/home-img2.svg);
-    background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
-    top: 10%;
-    left:5%;
+    background-position: center;
 }
 .home-container{
     /* border: green solid; */
+    width: fit-content;
     height: fit-content;
-    width: 60%;
-    position: relative;
-    top:-11%;
-    left: 30%;
-    margin-left: 5px;
-    font-size: large;
-
+    padding: 1em;
 }
+
 .my-name{
     font-weight: 600;
 }
 
-@media screen and (max-width:700px) {
-    .home-page .img1{
-        left: 0;
-        margin: auto;
-        width: 50%;
+@media screen and (max-width:1000px) {
+    .img1{
+        width: 100%;
         height: 50%;
     }
     .home-container{
         top: 10%;
         left: 0;
+    }
+    .home-page{
+        display: block;
     }
 }
