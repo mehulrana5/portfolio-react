@@ -30,4 +30,10 @@ html{
 }
 
 @media screen and (max-width:1000px) {
+    html{
+        scroll-snap-type:y none;
+    }
+    .pages{
+        scroll-snap-align:unset;
+    }
 }
