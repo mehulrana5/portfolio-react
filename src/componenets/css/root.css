@@ -10,7 +10,13 @@
     --mxw:700px
 }
 
-
+html{
+    scroll-snap-type:y mandatory;
+}
+.pages{
+    scroll-snap-align: start;
+    /* border: yellow solid; */
+}
 .background{
     position: absolute;
     width:100%; /* Use 100% instead of 200vw */
@@ -24,5 +30,4 @@
 }
 
 @media screen and (max-width:1000px) {
-    
 }

@@ -26,7 +26,7 @@ export default function About() {
   }
   return (
     <div>
-      <div className="about-sec">
+      <div className="about-sec pages">
         <div className="intro">
           <Lottie animationData={animationData} className='ani-1' />
           <div className="wrap-container">
@@ -45,7 +45,7 @@ export default function About() {
               </p>
             </div>
             <div className="about-container resume">
-                <a href={resume} o-target-blank ='_blank'>
+                <a href={resume}  rel="noreferrer" target ='_blank'>
                   <div className="resume-img-mask"></div>
                 </a>
             </div>

@@ -55,6 +55,7 @@
     background-image: url(../img/resume-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    transition: .3s;
 }
 .resume-img-mask:hover{
     opacity: 10%;

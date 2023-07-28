@@ -1,12 +1,15 @@
-import React, { useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 import './css/nav.css';
 import Home from './Home';
 import Project from './Project';
 import About from './About';
 import Contact from './Contact';
+import mycontext from '../MyContext';
 
 export default function Nav() {
   const sectionsRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  
+  const context=useContext(mycontext);
 
   function toggleMenu() {
     document.querySelector('.nav ul').classList.toggle('open');
@@ -18,6 +21,7 @@ export default function Nav() {
 
   function GoTo(index) {
     toggleMenu();
+    context.setNavBtn(1);
     if (sectionsRefs[index]?.current) {
       sectionsRefs[index].current.scrollIntoView({ behavior: 'smooth' });
       const opts=document.querySelectorAll('.nav>ul>li')
