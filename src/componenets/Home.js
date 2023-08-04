@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect} from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './css/home.css';
@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const context = useContext(mycontext);
-  
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {

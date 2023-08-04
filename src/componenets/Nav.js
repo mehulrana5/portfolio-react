@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useEffect, useState } from 'react';
+import React, { useContext, useRef} from 'react';
 import './css/nav.css';
 import Home from './Home';
 import Project from './Project';
