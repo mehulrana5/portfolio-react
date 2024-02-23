@@ -4,29 +4,26 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* width: 100vw; */
-    /* border:  red solid; */
     padding: 4em;
 }
 .card-container{
+    /* border: red solid; */
     height: 100%;
     width: 100%;
-    /* border: red solid; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 1em; */
     overflow-x: auto;
     scroll-snap-type:x mandatory;
     scroll-behavior: smooth;
 }
 .card-container-scroller{
+    /* border: white solid; */
     height: 100%;
-    width: 80%;
+    width: 90%;
     /* padding: 1em; */
-    /* border: yellow solid; */
     /* min-width:200px; */
     /* display:  flex; */
     /* justify-content: center; */
@@ -36,7 +33,6 @@
 .card{
     /* border: green solid; */
     display: flex;
-    /* flex-wrap: wrap-reverse; */
     flex-direction: column;
     background-color: #000000ca;
     height: 100%;
@@ -48,16 +44,19 @@
     transition: .3s;
 }
 .proj-img{
+    /* border: greenyellow solid; */
     display: flex;
     align-items: center;
 }
 .proj-img-container{
+    /* border: blue solid; */
     width: 100%;
 }
 .content{
     /* border:  red solid; */
     display: flex;
     flex-direction: column;
+    height: 80%;
 }
 .proj-title{
     /* border: yellow solid; */
@@ -73,6 +72,12 @@
     display: flex;
     align-items: center;
 }
+.proj-descp{
+    /* border: orange solid; */
+    height: 50%;
+    overflow:auto;
+    font-size: small;
+}
 .tag{
     /* border: 1px red solid; */
     margin-right: 5px;
@@ -82,14 +87,7 @@
     color:#0085d3;
     font-weight: 500;
 }
-.proj-descp{
-    /* border: orange solid; */
-    height: 30%;
-    overflow:hidden;
-    font-size: small;
-}
 .card-btn{
-    /* border-radius: 20px; */
     margin:0 auto;
     color: #0085d3;
     font-weight: 800;
@@ -98,6 +96,7 @@
     cursor: pointer;
     border: none;
     transition: .3s;
+    text-decoration: none;
 }
 .card-btn:hover{
     box-shadow: white 4px 4px 5px 0px;
@@ -132,7 +131,7 @@
     }
     .card-container{
         padding: 0;
-        height: 80%;
+        /* height: 80%; */
         scroll-snap-type:none;
     }
     .show-case-footer{
