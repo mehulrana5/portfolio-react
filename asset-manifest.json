@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.b6a64bfe.css",
-    "main.js": "/portfolio-react/static/js/main.93746c59.js",
+    "main.css": "/portfolio-react/static/css/main.acf7bdc6.css",
+    "main.js": "/portfolio-react/static/js/main.b1fefa62.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio-react/static/js/787.1ed0c42c.chunk.js",
     "static/media/cognize_project_mockup_1.svg": "/portfolio-react/static/media/cognize_project_mockup_1.bc22d8f87cf874226f0a03aa1c197434.svg",
     "static/media/resume-img.jpg": "/portfolio-react/static/media/resume-img.89e47166a98977755e3d.jpg",
@@ -14,12 +14,12 @@
     "static/media/linkedin-icon.svg": "/portfolio-react/static/media/linkedin-icon.241ffe3d9d5bd14c81a783fc2cae2d35.svg",
     "static/media/gmail-icon.svg": "/portfolio-react/static/media/gmail-icon.7b9e3c32de9c85dcedea4635a60eb240.svg",
     "index.html": "/portfolio-react/index.html",
-    "main.b6a64bfe.css.map": "/portfolio-react/static/css/main.b6a64bfe.css.map",
-    "main.93746c59.js.map": "/portfolio-react/static/js/main.93746c59.js.map",
+    "main.acf7bdc6.css.map": "/portfolio-react/static/css/main.acf7bdc6.css.map",
+    "main.b1fefa62.js.map": "/portfolio-react/static/js/main.b1fefa62.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio-react/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6a64bfe.css",
-    "static/js/main.93746c59.js"
+    "static/css/main.acf7bdc6.css",
+    "static/js/main.b1fefa62.js"
   ]
 }
