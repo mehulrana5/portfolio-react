@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type:x mandatory;
     scroll-behavior: smooth;
 }
@@ -23,21 +24,14 @@
     /* border: white solid; */
     height: 100%;
     width: 90%;
-    /* padding: 1em; */
-    /* min-width:200px; */
-    /* display:  flex; */
-    /* justify-content: center; */
     scroll-snap-align: center;
 }
 
 .card{
     /* border: green solid; */
-    display: flex;
-    flex-direction: column;
-    background-color: #000000ca;
+    background-color: #000000bb;
     height: 100%;
     width: 80%;
-    min-width:200px;
     padding: 10px;
     font-size: 18px;
     margin: auto;
@@ -45,62 +39,68 @@
 }
 .proj-img{
     /* border: greenyellow solid; */
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
+    top: 0;
+
 }
 .proj-img-container{
     /* border: blue solid; */
     width: 100%;
 }
 .content{
-    /* border:  red solid; */
+    position: relative;
+    height: 100%;
+    top: 50%;
+    transition: 1s;
+    background-color: #0000009c;
     display: flex;
     flex-direction: column;
-    height: 80%;
+    align-items: center;
 }
 .proj-title{
     /* border: yellow solid; */
-    height: 20%;
-    width: fit-content;
-    display: flex;
-    align-items: center;
+    font-size: 2em;
     font-weight: 600;
 }
 .proj-tags{
     /* border: pink solid; */
-    height: 10%;
     display: flex;
-    align-items: center;
 }
 .proj-descp{
     /* border: orange solid; */
     height: 50%;
     overflow:auto;
-    font-size: small;
 }
 .tag{
     /* border: 1px red solid; */
-    margin-right: 5px;
-    font-size:12px;
+    margin: 5px;
     padding:5px 10px 5px 10px;
     background-color: white;
+    width: fit-content;
     color:#0085d3;
-    font-weight: 500;
+    font-weight: 700;
 }
 .card-btn{
-    margin:0 auto;
-    color: #0085d3;
-    font-weight: 800;
-    background-color: white;
-    padding:10px;
-    cursor: pointer;
+    /* margin:0 auto; */
+    color: white;
+    font-weight: 700;
     border: none;
+    background-color: #0085d3;
+    padding:10px;
     transition: .3s;
     text-decoration: none;
+    border-radius: 20px;
+    width: fit-content;
 }
+.card:hover .content{
+    top: -100%;
+}
+  
 .card-btn:hover{
-    box-shadow: white 4px 4px 5px 0px;
-    transform: scale(1.05);
+    box-shadow: #0085d3 4px 4px 5px 0px;
 }
 .show-case-footer{
     margin:5px auto;
@@ -112,9 +112,6 @@
     .card-container { --scrollbar-border-thickness: 0px; --scrollbar-width: 10px; --scrollbar-height: 10px; --show-double-buttons: none; --scrollbar-track-color: #A1A1AA00; --scrollbar-thumb-color: #0150B0; } .card-container::-webkit-scrollbar { width: var(--scrollbar-width, 20px); height: var(--scrollbar-height, 20px); }.card-container::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color, #3B82F6); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); }.card-container::-webkit-scrollbar-track { background: var(--scrollbar-track-color, #A1A1AA); }.card-container::-webkit-scrollbar-corner { background: var(--scrollbar-corner-color, #FFFFFF); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); }.card-container::-webkit-scrollbar-button:vertical:start:increment, #preview::-webkit-scrollbar-button:vertical:end:decrement, #preview::-webkit-scrollbar-button:horizontal:start:increment, #preview::-webkit-scrollbar-button:horizontal:end:decrement { display: var(--show-double-buttons, none); }
     .card{
         flex-direction: row-reverse;
-    }
-    .proj-img, .content{
-        width: 50%;
     }
     .content{
         justify-content: center;
@@ -131,17 +128,18 @@
     }
     .card-container{
         padding: 0;
-        /* height: 80%; */
         scroll-snap-type:none;
     }
     .show-case-footer{
         font-size: 15px;
     }
-    .proj-title{
-        height: 10%;
-        margin:0 auto 10px;
+    .content{
+        font-size: medium;
     }
-    .proj-tags{
-        margin: auto;
+    .proj-title{
+        font-size: 1.5em;
+    }
+    .tag{
+        font-size: small;
     }
 }
